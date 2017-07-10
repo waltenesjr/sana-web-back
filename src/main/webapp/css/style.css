@@ -52,7 +52,7 @@ a, input, select, textarea {
 dt {
 	padding-bottom: 10px;
 	color: #1B670F;
-	font-weight: initial !important;
+	font-weight: bold !important;
 }
 
 select:-moz-focusring {
@@ -260,6 +260,11 @@ header {
 
 
 /* __________ Logo __________ */
+
+.img-logo {
+	width: 210px;
+	height: 70px;
+}
 .logo {float:left;}
 .logo a {
 	text-transform:uppercase;
@@ -1780,9 +1785,7 @@ input[type="color"]:focus {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.logo a {font-size:22px;}
-	
-	
+
 	#search-form input:focus {width:42px;}
 	
 
@@ -1904,11 +1907,7 @@ input[type="color"]:focus {
 	
 	
 	h2 {font-size:30px; line-height:32px;}
-	
-	
-	.logo a {font-size:22px;}
-	
-	
+
 	#search-form input:focus {width:42px;}
 	
 	
@@ -2130,8 +2129,6 @@ input[type="color"]:focus {
 		background-size: 150px, 100px, auto;
 	}
 }
-
-
 
 
 
