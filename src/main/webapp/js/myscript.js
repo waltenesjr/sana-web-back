@@ -308,7 +308,7 @@ function enviarEmail(e) {
     var nome = $("#name").val();
 	var mensagem = $("#message").val();
 
-    $.get("http://sanambiental.com.br/rest/rest/email/enviar/" + nome + "/" + mensagem).done(function (msg) {
+    $.get("http://sanambiental.com.br/rest/email/enviar/" + nome + "/" + mensagem).done(function (msg) {
        	if (msg != 0){
             $('#myModal').modal('show');
             $("#name").val("Nome");
