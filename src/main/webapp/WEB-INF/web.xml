@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	version="3.0">
 
-	<display-name>My TO-DO List</display-name>
+	<display-name>SanAmbiental</display-name>
 
 	<!-- It's used to integrate spring in our application -->
 	<!-- É utilizado para integrar o spring em nossa aplicação -->
@@ -33,4 +33,14 @@
 		<servlet-name>learning-spring-mvc</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
+
+	<filter>
+		<filter-name>cors</filter-name>
+		<filter-class>br.com.sanambiental.filter.CORSFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>cors</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 </web-app>

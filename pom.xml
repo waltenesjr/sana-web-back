@@ -3,30 +3,16 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.sanambiental</groupId>
-	<artifactId>sana-full-web</artifactId>
+	<artifactId>sana-web-back</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.0</version>
-	<name>sana-full-web</name>
+	<name>sana-web-back</name>
 
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.4-1200-jdbc4</version>
-		</dependency>
-
-		<!-- hibernate -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>4.3.4.Final</version>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
 		</dependency>
 
 		<!-- spring framework -->
@@ -81,7 +67,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>sana-full-web</finalName>
+		<finalName>sana-web-back</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

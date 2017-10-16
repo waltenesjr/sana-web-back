@@ -9,7 +9,7 @@
 
     <!--  esse arquivo é responsável por todas as configurações da mvc -->
 	<context:component-scan base-package="br.com.sanambiental" />
-	
+
 	<!-- Diz ao spring que as configurações dos beans serão orientadas a anotações -->
 	<mvc:annotation-driven />
 </beans>
