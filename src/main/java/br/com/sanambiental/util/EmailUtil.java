@@ -20,4 +20,21 @@ public class EmailUtil {
             e.printStackTrace();
         }
     }
+
+    public static void smtpWBox(String content) {
+        SimpleEmail mail = new SimpleEmail();
+        try {
+            mail.setFrom("contato@warningbox.com.br", "Mensagem enviada do site");
+            mail.setSubject("Mensagem contato do site");
+            mail.setMsg(content);
+            mail.setSSLOnConnect(true);
+            mail.setAuthentication("contato@warningbox.com.br", "123456wb");
+            mail.setSmtpPort(587);
+            mail.setHostName("smtpi.warningbox.com.br");
+            mail.addTo("contato@warningbox.com.br", "Contato WarningBox");
+            mail.send();
+        } catch (EmailException e) {
+            e.printStackTrace();
+        }
+    }
 }
